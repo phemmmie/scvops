@@ -1,0 +1,15 @@
+# models/staging/realized_orderlevel_cm1.yml
+
+version: 2
+
+sources:
+  - name: production_modelled
+    tables:
+      - name: model_realized_orderlevel_cm1
+        identifier: orderid  # Replace with the actual primary key column name
+
+columns:
+  - name: orderid
+    description: "Unique identifier for each order"
+  - name: cm1
+    description: "CM1 value for the order"

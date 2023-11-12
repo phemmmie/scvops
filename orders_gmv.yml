@@ -1,0 +1,15 @@
+# models/staging/orders_gmv.yml
+
+version: 2
+
+sources:
+  - name: production_modelled
+    tables:
+      - name: model_orders_gmv
+        identifier: order_id 
+
+columns:
+  - name: order_id
+    description: "Unique identifier for each order"
+  - name: gmv
+    description: "Gross Merchandise Value of the order"

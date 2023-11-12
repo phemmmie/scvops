@@ -1,0 +1,19 @@
+# models/staging/member_preference.yml
+
+version: 2
+
+sources:
+  - name: raw_user_preference
+    tables:
+      - name: member_preference
+        identifier: ot_member_id
+
+columns:
+  - name: ot_member_id
+    description: "Unique identifier for each member"
+  - name: gender
+    description: "Gender of the member"
+  - name: locale
+    description: "Locale of the member"
+  - name: email
+    description: "Email address of the member"

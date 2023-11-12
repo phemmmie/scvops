@@ -1,0 +1,22 @@
+# models/staging/user_history.yml
+
+version: 2
+
+sources:
+  - name: raw_iterable
+    tables:
+      - name: user_history
+
+columns:
+  - name: first_name
+    description: "First name of the user"
+  - name: last_name
+    description: "Last name of the user"
+  - name: optin
+    description: "Opt-in status of the user"
+  - name: last_order_date
+    description: "Date of the last order made by the user"
+  - name: is_customer
+    description: "Boolean indicating if the user is a customer"
+  - name: favourited_brand_names
+    description: "List of brand names favorited by the user"
